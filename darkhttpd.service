@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/darkhttpd /srv/http --uid http --gid http --chroot --no-listing --mimetypes /etc/mime.types
+ExecStart=/usr/bin/darkhttpd /var/www --uid www-data --gid www-data --chroot --no-listing --mimetypes /etc/mime.types
 ProtectSystem=full
 ProtectHome=on
 PrivateDevices=on
